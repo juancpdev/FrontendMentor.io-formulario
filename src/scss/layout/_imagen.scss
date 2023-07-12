@@ -1,0 +1,17 @@
+.contenedor-imagen {
+    order: 2;
+}
+
+.imagen-mobile {
+    width: 100%;
+    @include tablet {
+        display: none;
+    }
+}
+
+.imagen-desktop {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+}

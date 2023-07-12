@@ -1,0 +1,47 @@
+/* FORMULARIO */
+
+.contenedor-formulario {
+    margin: 2rem;
+    p, li {
+        font-size: 1.6rem;
+    }
+
+    .contenedor-lista {
+        margin: 2rem 0;
+        li {
+            padding-bottom: 0.5rem;
+            display: flex;
+        }
+    }
+    .contenedor-lista li::before {
+        content: url(../../../assets/images/icon-list.svg);
+        padding-right: 2rem;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+
+        .contenedor-label {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        label, p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input {
+            height: 5.5rem;
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+            border-radius: 1.5rem;
+            border: .1rem solid rgb(123, 123, 123);
+        }
+        textarea {
+            color: hsl(4, 100%, 67%);
+        }
+    }
+}

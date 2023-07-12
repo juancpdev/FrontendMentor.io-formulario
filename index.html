@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="build/css/app.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <section class="principal">
+
+      <div class="contenedor-imagen">
+        <img class="imagen-mobile" src="build/img/illustration-sign-up-mobile.svg" >
+        <img class="imagen-desktop" src="build/img/illustration-sign-up-desktop.svg" >
+      </div>
+  
+      <div class="contenedor-formulario">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="contenedor-lista">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+  
+        <form class="formulario" novalidate>
+          <div class="contenedor-label">
+            <label for="email">Email adress</label>
+          </div>
+          <input class="input-email" type="email" id="email" placeholder="correo@correo.com" required>
+          <input type="submit" value="Subscribe to monthly newsletter" class="boton">
+        </form>
+        
+      </div>
+    </section>
+
+    <section class="secundaria">
+      <div class="imagen-exito">
+        <img src="assets/images/icon-success.svg">
+      </div>
+
+      <div class="texto-exito">
+        <h2>Thanks for subscribing!</h2>
+        <p class="mensaje-exito">A confirmation email has been sent to 
+          <span class="span-email"></span>. Please open it and click the button inside to confirm your subscription.
+        </p>
+        
+      </div>
+      <form class="boton-volver">
+        <input type="submit" value="Dismiss Message" class="boton">
+      </form>
+      
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/juancpdev" target="_blank">Juan Cruz Pineda</a>.
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
